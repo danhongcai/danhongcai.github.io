@@ -1,1 +1,27 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta name=renderer content=webkit|ie-comp|ie-stand><meta http-equiv=X-UA-Compatible content="IE=Edge，chrome=1"><meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><meta name=apple-mobile-web-app-capable content=yes><meta name=fullscreen content=yes><meta name=x5-fullscreen content=true><meta http-equiv=Pragma content=no-cache><meta http-equiv=Cache-Control content=no-cache><meta http-equiv=x-dns-prefetch-control content=on><link rel=icon href=/favicon.ico><title>慧点科技-智慧风控</title><link href=/css/about.b977bd1b.css rel=prefetch><link href=/css/about~riskControl~scheme.4da91246.css rel=prefetch><link href=/css/home.961eb803.css rel=prefetch><link href=/css/riskControl.fc03a787.css rel=prefetch><link href=/css/scheme.3f6572fe.css rel=prefetch><link href=/js/about.bd47b80c.js rel=prefetch><link href=/js/about~riskControl~scheme.1df4be49.js rel=prefetch><link href=/js/home.04263a70.js rel=prefetch><link href=/js/riskControl.6eda7465.js rel=prefetch><link href=/js/scheme.e5feb71b.js rel=prefetch><link href=/css/app.c3aec645.css rel=preload as=style><link href=/css/chunk-vendors.24bf1742.css rel=preload as=style><link href=/js/app.e08effa5.js rel=preload as=script><link href=/js/chunk-vendors.c0f67c67.js rel=preload as=script><link href=/css/chunk-vendors.24bf1742.css rel=stylesheet><link href=/css/app.c3aec645.css rel=stylesheet></head><body><div id=app></div><script src=/js/chunk-vendors.c0f67c67.js></script><script src=/js/app.e08effa5.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>慧点科技-智慧风控</title><script>/*页面自动设置Rem*/
+       (function (w, d, psd_w) {
+            var resizeTime = null,
+                waitTime = 300;
+
+            /*设置Html的FontSize*/
+            function changeRem() {
+                var width = d.documentElement.clientWidth,
+                    height = d.documentElement.clientHeight,
+                    fontSize = width / psd_w * 100;
+
+                // if (fontSize > 100) fontSize = 100;
+                // if (width / height >= 0.75) fontSize = 80;
+                d.documentElement.style.fontSize = fontSize + "px";
+            }
+
+            /*屏幕变化事件*/
+            w.addEventListener("onorientationchange" in w ? "orientationchange" : "resize", function () {
+              console.log("0000");
+                clearTimeout(resizeTime);
+                resizeTime = setTimeout(changeRem, waitTime);
+            }, false);
+            w.addEventListener("pageshow", function (w) {
+                w.persisted && (clearTimeout(resizeTime), resizeTime = setTimeout(changeRem, waitTime));
+            }, false);
+            d.addEventListener("DOMContentLoaded", changeRem, false);
+        }(window, document, 750));</script><link href=/static/css/app.020dfe82627b14f53ad5b9861aee6d85.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.02b51a755d2e28bce698.js></script><script type=text/javascript src=/static/js/vendor.2799a750a94853ed657a.js></script><script type=text/javascript src=/static/js/app.defd62b9cc6c501c7553.js></script></body></html>
