@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>慧点科技-数智风控</title><script>/*页面自动设置Rem*/
+       (function (w, d, psd_w) {
+            var resizeTime = null,
+                waitTime = 300;
+
+            /*设置Html的FontSize*/
+            function changeRem() {
+                var width = d.documentElement.clientWidth,
+                    height = d.documentElement.clientHeight,
+                    fontSize = width / psd_w * 100;
+
+                // if (fontSize > 100) fontSize = 100;
+                // if (width / height >= 0.75) fontSize = 80;
+                d.documentElement.style.fontSize = fontSize + "px";
+            }
+
+            /*屏幕变化事件*/
+            w.addEventListener("onorientationchange" in w ? "orientationchange" : "resize", function () {
+              console.log("0000");
+                clearTimeout(resizeTime);
+                resizeTime = setTimeout(changeRem, waitTime);
+            }, false);
+            w.addEventListener("pageshow", function (w) {
+                w.persisted && (clearTimeout(resizeTime), resizeTime = setTimeout(changeRem, waitTime));
+            }, false);
+            d.addEventListener("DOMContentLoaded", changeRem, false);
+        }(window, document, 750));</script><link rel="shortcut icon" href=/favicon.ico><link href=/static/css/app.cbaf4f1fbca59b05cd86a027e0842725.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.1dbaacc3578ab1aebb14.js></script><script type=text/javascript src=/static/js/app.4c8cb5890b718e21573d.js></script></body></html>
