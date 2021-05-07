@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="max-age=-1" content="no-cache"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>人员选择</title>
+<!-- <link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css?v=2" /> -->
+<style>
+    /* common.css */
+    html,body{padding:0;margin:0}html{font-size:14px}body{position:relative;font-size:14px;font-family:"Microsoft YaHei","Hiragino Sans GB","微软雅黑","宋体",Arial,Verdana,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a:link,a:active,a:visited,a:hover,a:visited:hover{text-decoration:none;cursor:pointer}img{display:block;margin:0 auto}img[src='']{opacity:0!important}ul,li,img,span,p,font,strong,em,ol,h1,h2,h3,h4,h5,h6,dl,dt,dd,input,tboby,form{margin:0;padding:0;border:0;list-style:none}h1,h2,h3,h4,h5,h6{font-weight:normal}.pointer{pointer-events:all}.disabled,.no-pointer{pointer-events:none}table{border-collapse:collapse;border-spacing:0}input,select,textarea,button{border-radius:0;outline:0}input{-webkit-appearance:none}li{list-style:none}img{display:block;margin:0 auto}a img{border:0}video{width:100%;height:100%}*{outline:0;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-focus-ring-color:rgba(0,0,0,0)}input:-webkit-autofill,textarea:-webkit-autofill,select:-webkit-autofill{background-color:rgba(0,0,0,0);-webkit-box-shadow:0 0 0 1000px white inset}.clearfix:after{content:"\200B";display:block;height:0;clear:both}.clearfix{*zoom:1}.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}@media screen and (min-width:320px){html{font-size:42.67px}}@media screen and (min-width:360px){html{font-size:48px}}@media screen and (min-width:375px){html{font-size:50px}}@media screen and (min-width:414px){html{font-size:55.2px}}@media screen and (min-width:480px){html{font-size:64px}}@media screen and (min-width:640px){html{font-size:85.33px}}@media screen and (min-width:750px){html{font-size:100px}}::-webkit-input-placeholder{color:#ccc}:-moz-placeholder{color:#ccc}::-moz-placeholder{color:#ccc}:-ms-input-placeholder{color:#ccc}
+
+    /* index.css */
+    body{position:relative;z-index:0;min-width:300px;max-width:750px;margin:0 auto;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;user-select:none;background:#f5f5f5}body,html{height:100%}body .container{position:relative;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;height:100%}.title{background:#32aaff;height:.88rem;font-family:PingFangSC-Regular;font-size:.36rem;color:#f9f9fc;line-height:.88rem;position:relative;padding:0 .30rem}.title a{background:url(../image/back_icon_white.png) no-repeat center;background-size:100%;width:.20rem;height:.37rem;float:left;margin-top:.26rem}.search-input-group{height:1rem;box-shadow:0 1px 0 0 #ccc;box-sizing:border-box;padding:.14rem .3rem;position:relative}.search-input-group input{background:#fff;border:1px solid #979797;border-radius:10px;width:100%;height:100%;padding:0 .1rem 0 .1rem;font-size:.3rem;box-sizing:border-box}.search-icon{background:url(../image/search_icon.png) no-repeat center;background-size:100%;position:absolute;width:.48rem;height:.48rem;right:.5rem;top:50%;margin-top:-.24rem}.back-upper-level{margin:0 .3rem;font-size:.28rem;color:#666;height:.86rem;text-align:left;display:block;line-height:.86rem}.back-upper-level i{background:url(../image/back_icon_gray.png) no-repeat center;background-size:100%;width:.34rem;height:.34rem;float:left;margin:.26rem .1rem 0 0}.tab-box{display:flex;flex:1;background:#fff;min-height:4rem}.tab-box li{height:.88rem;line-height:.88rem;font-size:.28rem;color:#000}.tab-box li span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block}.nav-tab{width:2.6rem;float:left;text-align:left;overflow-y:auto;background:#f5f5f5}.nav-tab li{padding-left:.3rem}.nav-tab li span{width:1.96rem}.nav-tab li.active{background:#fff}.nav-tab li.active::before{content:"";background:#32aaff;width:.08rem;height:100%;margin-left:-.30rem;float:left}.tab-content-box{flex:1;display:flex;flex-direction:column}.select-all{font-size:.28rem;color:#000;text-align:right;line-height:.86rem;padding:0 .3rem 0 .4rem}#tab-content-list{flex:1;overflow:auto}.tab-content-box i{width:.32rem;height:.32rem;background:url(https://image.gaeamobile.net/image/20180712/141506/1.png) no-repeat center;background-size:100%;margin:.28rem 0 0 .28rem;float:right}.tab-content-box li.active i,.tab-content-box #select-all-label.active i{background:url(https://image.gaeamobile.net/image/20200716/141313/fire.png) no-repeat center;background-size:100%}.tab-content-box li{box-shadow:0 1px 0 0 #dae1ec;padding:0 .3rem 0 .4rem}.tab-content-box img{width:.48rem;height:.48rem;float:left;margin-top:.2rem}.tab-content-box li span{max-width:2.2rem;vertical-align:middle}.bottom-btn-group{height:1.28rem;width:100%;background:#fff;padding:.20rem 0;box-sizing:border-box}.bottom-btn-group button{max-width:3.34rem;width:42%;height:100%;display:inline-block;box-sizing:border-box;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:.08rem;font-size:.32rem;color:#333;margin:0 .1rem}.bottom-btn-group button.btn-primary{background:#32aaff;color:#fff}
+</style>
+
+<script type="text/javascript">
+    /*页面自动设置Rem*/
+    (function (w, d, psd_w) {
+        var resizeTime = null,
+            waitTime = 300;
+
+        /*设置Html的FontSize*/
+        function changeRem() {
+            var width = d.documentElement.clientWidth,
+                height = d.documentElement.clientHeight,
+                fontSize = width / psd_w * 100;
+
+            if (fontSize > 100) fontSize = 100;
+            if (width / height >= 0.75) fontSize = 80;
+            d.documentElement.style.fontSize = fontSize + "px";
+        }
+
+        /*屏幕变化事件*/
+        w.addEventListener("onorientationchange" in w ? "orientationchange" : "resize", function () {
+            clearTimeout(resizeTime);
+            resizeTime = setTimeout(changeRem, waitTime);
+        }, false);
+        w.addEventListener("pageshow", function (w) {
+            w.persisted && (clearTimeout(resizeTime), resizeTime = setTimeout(changeRem, waitTime));
+        }, false);
+        d.addEventListener("DOMContentLoaded", changeRem, false);
+    }(window, document, 750));
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <p>宽==<span id="info-w"></span>高==<span id="info-h"></span>dr==<span id="info-d"></span></p>
+        <p class="title"><a href="javascript:void(0);"></a> 人员选择</p>
+      
+        <!-- 搜索框 -->
+        <div class="search-input-group">
+            <input type="search" class="form-control" placeholder="人员搜索" autocapitalize="off" autocorrect="off" id="search-input">
+            <span class="search-icon"></span>
+        </div>
+
+        <a class="back-upper-level" href="javascript:void(0);">
+           <i></i>
+            返回上一级组织
+        </a>
+
+        <div class="tab-box" >
+            <ul class="nav-tab" id="nav-tab">
+                <li class="active"><span>采购中心</span></li>
+            </ul>
+
+            <div class="tab-content-box">
+                <p class="select-all">
+                    <span id="select-all-label">全选<i></i></span>
+                </p>
+                <ul id="tab-content-list">
+                    <li>
+                        <img src="" alt="头像">
+                        <i></i>
+                        <span>名字</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 底部按钮 -->
+        <div class="bottom-btn-group">
+            <button type="button" class="btn" id="btn-cancel">取消</button>
+            <button type="button" class="btn btn-primary" id="btn-confirm">确定</button>      
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<!-- <script>
+    alert(document.documentElement.clientWidth);
+    alert(document.documentElement.clientHeight);
+    alert(document.documentElement.clientWidth/document.documentElement.clientHeight);
+</script> -->
+<!-- <script type="text/javascript" src="js/index.js?v=1"></script> -->
+<script>
+    $(function(){var w=document.documentElement.clientWidth;var h=document.documentElement.clientHeight;var d=window.devicePixelRatio;console.log(w,h,d);
+     $('#info-w').html(w);
+    $('#info-h').html(h);
+    $('#info-d').html(d);
+    var defaultAvatar='https://image.gaeamobile.net/image/20201013/183240/icon_dzxy.jpg';var NavTab=$('#nav-tab');var TabContent=$('#tab-content-list');var BtnSelctAll=$('#select-all-label');var DepartmentList=[{id:"1",name:"采购中心",peoList:[{avatar:"",name:"马文利"},{avatar:"",name:"孙军超"},{avatar:"",name:"张燕（IT）"},{avatar:"",name:"胡兴鹏"},{avatar:"",name:"张睿秋"},{avatar:"",name:"李秋曼"},{avatar:"",name:"马文利"},{avatar:"",name:"孙军超"},{avatar:"",name:"张燕（IT）"},{avatar:"",name:"胡兴鹏"},{avatar:"",name:"张睿秋"},{avatar:"",name:"李秋曼"},{avatar:"",name:"马文利"},{avatar:"",name:"孙军超"},{avatar:"",name:"张燕（IT）"}]},{id:"2",name:"工程建设部",peoList:[{avatar:"",name:"马文利"},{avatar:"",name:"孙军超"},{avatar:"",name:"张燕（IT）"},{avatar:"",name:"胡兴鹏"},{avatar:"",name:"高畅"},{avatar:"",name:"李秋曼"}]},{id:"3",name:"管理信息系统部",peoList:[{avatar:"",name:"马文利"},{avatar:"",name:"孙军超"},{avatar:"",name:"张燕（IT）"}]},{id:"4",name:"广州业务支撑部",peoList:[{avatar:"",name:"马文利"},{avatar:"",name:"孙军超"},{avatar:"",name:"张燕（IT）"},{avatar:"",name:"胡兴鹏"},]},{id:"5",name:"计算清结算中心",peoList:[{avatar:"",name:"马文利"},{avatar:"",name:"孙军超"},{avatar:"",name:"张燕（IT）"},{avatar:"",name:"胡兴鹏"},]},];function RenderNavTab(){var htmlTpl='';DepartmentList.forEach((dep,i)=>{htmlTpl+=`<li class="${i == 0?'active':''}"depID=${dep.id}><span>${dep.name}</span></li>`;(i==0)&&RenderTabContent(dep.peoList)});NavTab.html(htmlTpl)};function RenderTabContent(peoList){TabContent.html('');let htmlTpl='';peoList.forEach((item,i)=>{item.avatar=item.avatar!=""?item.avatar:defaultAvatar;htmlTpl+=`<li><img src="${item.avatar}"alt="头像"><i></i><span>${item.name}</span></li>`});TabContent.html(htmlTpl)};RenderNavTab();NavTab.on('click','li',function(){$(this).addClass('active').siblings('.active').removeClass('active');let depID=$(this).attr("depID");let depInfo=DepartmentList.find(function checkAdult(dep){return dep.id==depID});RenderTabContent(depInfo.peoList);SetChecked(BtnSelctAll,false)});TabContent.on('click','li',function(){let checked=GetChecked(this);SetChecked(this,!checked);if(checked){SetChecked(BtnSelctAll,!checked)}else{let flag=true;TabContent.children("li").each(function(i,v){flag=GetChecked(v,!checked)?flag:false});flag&&SetChecked(BtnSelctAll,flag)}});BtnSelctAll.on('click',function(){let checked=GetChecked(this);SetChecked(this,!checked);TabContent.children("li").each(function(i,v){SetChecked(v,!checked)})});function GetChecked(ele){return $(ele).hasClass('active')}function SetChecked(ele,checked){if(checked){$(ele).addClass('active');return}$(ele).removeClass('active')}$("#search-input").on('keypress',function(e){var searchName=$(this).val();console.log("searchName",searchName)});$("#btn-cancel").on('keypress',function(e){console.log("取消")});$("#n-confirm").on('keypress',function(e){console.log("确认")})});
+</script>
+</body>
